@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS 実践</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#news">ニュース</a></li>
+          <li><a href="#price">価格</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="top">
+        <div class="top_wrap">
+          <h1 class="top_title">
+            <!--700px以下は改行なし-->
+            メンズ<br class="br_sp">脱毛サロン!
+          </h1>
+        </div>
+      </section>
+
+      <section id="service">
+        <h2 class="section_title">サービス<h2>
+        <div class="service_wrap">
+          <div class="service_left">
+            <img src="img/service.png" alt="サービス画像">
+          </div>
+          <div class="service_right">
+            <h3>新春割引キャンペーン</h3>
+            <p class="requirement_title">※ 以下条件のすべてを満たした場合に新春キャンペーンの適用となります。</p>
+            <p class="requirement">・個人契約のお客様であること<br>・3回以上通うことができる方<br>・成人した男性の方</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="news">
+        <h2 class="section_title">ニュース</h2>
+        <div class="news_wrap">
+          <p>2023/1/1<br>新年のご挨拶</p>
+          <p>2022/12/31<br>年末年始の店舗休業案内</p>
+          <p>2023/8/23<br>お盆休みによる店舗休業案内</p>
+        </div>
+      </section>
+
+      <section id="price">
+        <h2 class="section_title">価格</h2>
+        <div class="price_wrap">
+          <table>
+            <tr>
+              <th>ー</th>
+              <th>プランA</th>
+              <th>プランB</th>
+            </tr>
+            <tr>
+              <td>入会金</td>
+              <td>10万円</td>
+              <td>15万円</td>
+            </tr>
+            <tr>
+              <td>料金</td>
+              <td>９００円/月</td>
+              <td>１５００円/月</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section_title">お問い合わせ</h2>
+        <form class="form" method="post">
+          <div>
+            <label for="name">氏名：</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="mail">メールアドレス：</label>
+            <input type="email" id="mail" name="user_name">
+          </div>
+          <div>
+            <label for="tel">電話番号：</label>
+            <input type="tel" id="tel" name="user_tel">
+          </div>
+          <div>
+            <label for="msg">内容：</label>
+            <textarea name="user_message" id="msg"></textarea>
+          </div>
+          <div class="button_submit">
+            <button class="button" type="submit">送信</button>
+          </div>
+        </form>
+      </section>
+
+      <footer id="footer">
+        <div>
+          <small>© 2022 CODESTAR All rights reserved.</small>
+        </div>
+      </footer>
+    </main>
+  </body>
